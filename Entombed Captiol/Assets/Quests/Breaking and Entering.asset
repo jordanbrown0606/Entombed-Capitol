@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a5095e3cd4da641ad78e54e46c1da0, type: 3}
+  m_Name: Breaking and Entering
+  m_EditorClassIdentifier: 
+  questName: Breaking and Entering
+  objectives:
+  - name: Find the Key to the Gate
+    optional: 0
+    visible: 1
+    initialStatus: 0
+  - name: Speak to the Haggler
+    optional: 1
+    visible: 1
+    initialStatus: 0
+  - name: Kill the Haggler
+    optional: 1
+    visible: 1
+    initialStatus: 0

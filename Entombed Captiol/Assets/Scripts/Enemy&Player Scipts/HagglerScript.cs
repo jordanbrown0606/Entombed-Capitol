@@ -1,0 +1,56 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class HagglerScript : MonoBehaviour, IDamageable
+{
+    [SerializeField] private int _health;
+
+    [SerializeField] ObjectiveTrigger objective = new ObjectiveTrigger();
+
+    public Transform falseBox;
+    public Transform trueBox;
+
+    public GameObject gateKey;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void MoveFalse()
+    {
+        gateKey.transform.position = falseBox.position;
+    }
+
+    public void MoveTrue()
+    {
+        gateKey.transform.position = trueBox.position;
+    }
+
+    public void TakeDamage(int amount)
+    {
+        _health -= amount;
+
+        if (_health <= 0)
+        {
+            gameObject.SetActive(false);
+            objective.Invoke();
+        }
+    }
+
+    private void OnDisable()
+    {
+        if(gateKey.transform.position != trueBox.position)
+        {
+            gateKey.transform.position = transform.position;
+        }
+    }
+}
