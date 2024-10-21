@@ -18,6 +18,10 @@ MonoBehaviour:
     optional: 0
     visible: 1
     initialStatus: 0
+  - name: Kill the Haggler's "Friend"
+    optional: 1
+    visible: 1
+    initialStatus: 0
   - name: Escape the Dungeon
     optional: 0
     visible: 1

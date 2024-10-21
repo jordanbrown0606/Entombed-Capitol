@@ -8,23 +8,21 @@ public class HagglerBox : MonoBehaviour
 
     [SerializeField] ObjectiveTrigger objective = new ObjectiveTrigger();
 
+    private Collider _collider;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        _collider = GetComponent<Collider>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if(other.gameObject == _gateKey)
+        if (_collider.bounds.Contains(_gateKey.position))
         {
             objective.Invoke();
+            this.enabled = false;
         }
     }
 }

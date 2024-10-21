@@ -8,6 +8,8 @@ public class HagglerScript : MonoBehaviour, IDamageable
 
     [SerializeField] ObjectiveTrigger objective = new ObjectiveTrigger();
 
+    [SerializeField] ObjectiveTrigger secondaryObjective = new ObjectiveTrigger();
+
     public Transform falseBox;
     public Transform trueBox;
 
@@ -32,7 +34,8 @@ public class HagglerScript : MonoBehaviour, IDamageable
 
     public void MoveTrue()
     {
-        gateKey.transform.position = trueBox.position;
+        gateKey.transform.position = transform.position + new Vector3(-2, 0, 0);
+        secondaryObjective.Invoke();
     }
 
     public void TakeDamage(int amount)
