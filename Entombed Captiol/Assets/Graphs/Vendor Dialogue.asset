@@ -778,7 +778,7 @@ MonoBehaviour:
   m_Name: Exit
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 2120, y: 408}
+  position: {x: 2184, y: 392}
   ports:
     keys:
     - entry
