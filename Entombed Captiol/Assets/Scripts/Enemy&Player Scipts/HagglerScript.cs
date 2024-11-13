@@ -14,19 +14,6 @@ public class HagglerScript : MonoBehaviour, IDamageable
     public Transform trueBox;
 
     public GameObject gateKey;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void MoveFalse()
     {
         gateKey.transform.position = falseBox.position;
