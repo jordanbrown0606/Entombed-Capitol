@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class ActivateDeactivate : MonoBehaviour
+public class NoteController : MonoBehaviour
 {
     public GameObject canvas;
-    public GameObject fire;
+    public GameObject player;
+    public GameObject note;
+    public int distanceThreshold;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("e"))
+        float distance = Vector3.Distance (player.transform.position, note.transform.position);
+
+        if (Input.GetKeyDown("e") && distance < distanceThreshold)
         {
             Debug.Log("e key was pressed");
             canvas.SetActive(true);
@@ -21,10 +25,5 @@ public class ActivateDeactivate : MonoBehaviour
         {
             canvas.SetActive(false);
         }
-    }
-
-    private void OnTriggerEnter()
-    {
-        fire.SetActive(true);
     }
 }
