@@ -21,7 +21,7 @@ MonoBehaviour:
   - name: Speak to the Haggler
     optional: 1
     visible: 1
-    initialStatus: 0
+    initialStatus: 1
   - name: Kill the Haggler
     optional: 1
     visible: 1
