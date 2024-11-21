@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class MoveKey : MonoBehaviour
 {
-    [SerializeField] private Transform _trueBox;
     [SerializeField] private GameObject _player;
+    [SerializeField] private ObjectiveTrigger _objective;
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject == _player)
         {
-            gameObject.transform.position = _trueBox.position;
+            GameManager.Instance.hasKey = true;
+            _objective.Invoke();
+            gameObject.SetActive(false);
         }
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RaycastExample : MonoBehaviour
@@ -29,6 +30,10 @@ public class RaycastExample : MonoBehaviour
                 if(hit.transform.gameObject.GetComponent<NPCScript>()?.spoken == false)
                 {
                     hit.transform.gameObject.GetComponent<ISpeakable>()?.StartDialogue();
+                }
+                else if(hit.transform.gameObject.GetComponent<IInteractable>() != null)
+                {
+                    hit.transform.gameObject.GetComponent < IInteractable>()?.Interact();
                 }
                 else
                 {

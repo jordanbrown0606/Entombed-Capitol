@@ -138,7 +138,7 @@ public class NPCConversation : MonoBehaviour
         }
         else
         {
-            GetComponent<HagglerScript>().MoveFalse();
+            return;
         }
     }
 

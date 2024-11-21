@@ -12,7 +12,7 @@ public class GateScript : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E))
         {
-            if (_trueBox.bounds.Contains(_gateKey.position))
+            if (GameManager.Instance.hasKey == true)
             {
                 _anim.SetBool("Open", true);
             }

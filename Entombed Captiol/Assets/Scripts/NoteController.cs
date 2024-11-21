@@ -3,27 +3,26 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class NoteController : MonoBehaviour
+public class NoteController : MonoBehaviour, IInteractable
 {
-    public GameObject canvas;
-    public GameObject player;
-    public GameObject note;
-    public int distanceThreshold;
+    [SerializeField] private GameObject _note;
+    [SerializeField] private ObjectiveTrigger _objective;
+
+    public void Interact()
+    {
+        _note.SetActive(true);
+    }
 
     // Update is called once per frame
     void Update()
     {
-        float distance = Vector3.Distance (player.transform.position, note.transform.position);
-
-        if (Input.GetKeyDown("e") && distance < distanceThreshold)
+        if(_note.activeSelf == true)
         {
-            Debug.Log("e key was pressed");
-            canvas.SetActive(true);
-        }
-
-        if (Input.GetKeyDown("escape"))
-        {
-            canvas.SetActive(false);
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                _objective.Invoke();
+                _note.SetActive(false);
+            }
         }
     }
 }

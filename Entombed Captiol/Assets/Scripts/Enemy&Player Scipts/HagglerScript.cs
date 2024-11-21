@@ -10,18 +10,10 @@ public class HagglerScript : MonoBehaviour, IDamageable
 
     [SerializeField] ObjectiveTrigger secondaryObjective = new ObjectiveTrigger();
 
-    public Transform falseBox;
-    public Transform trueBox;
-
     public GameObject gateKey;
-    public void MoveFalse()
-    {
-        gateKey.transform.position = falseBox.position;
-    }
-
     public void MoveTrue()
     {
-        gateKey.transform.position = transform.position + new Vector3(-2, 0, 0);
+        gateKey.transform.position = transform.position + new Vector3(-1, 0, 2);
         secondaryObjective.Invoke();
     }
 
@@ -31,14 +23,14 @@ public class HagglerScript : MonoBehaviour, IDamageable
 
         if (_health <= 0)
         {
-            gameObject.SetActive(false);
             objective.Invoke();
+            gameObject.SetActive(false);
         }
     }
 
     private void OnDisable()
     {
-        if(gateKey.transform.position != trueBox.position)
+        if(GameManager.Instance.hasKey == false)
         {
             gateKey.transform.position = transform.position;
         }

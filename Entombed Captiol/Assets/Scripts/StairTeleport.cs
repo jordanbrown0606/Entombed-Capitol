@@ -5,19 +5,12 @@ using UnityEngine;
 
 public class StairTeleport : MonoBehaviour
 {
-    public GameObject player;
+    [SerializeField] private GameObject _player;
+    [SerializeField] private Transform _stairsTarget;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (this.transform.position.y < 10)
-        {
-            Debug.Log("You touched the lower stairs!");
-            player.transform.position = new Vector3(-1.6f, 28.34f, -4.34f);
-        }
-        if (this.transform.position.y > 10)
-        {
-            Debug.Log("You touched the upper stairs!");
-            player.transform.position = new Vector3(2.39f, 1.1f, 5.56f);
-        }
+        _player.transform.position = _stairsTarget.position;
+        _player.transform.rotation = _stairsTarget.rotation;
     }
 }
