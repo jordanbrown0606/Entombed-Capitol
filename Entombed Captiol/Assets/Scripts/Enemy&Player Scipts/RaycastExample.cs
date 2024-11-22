@@ -33,7 +33,7 @@ public class RaycastExample : MonoBehaviour
                 }
                 else if(hit.transform.gameObject.GetComponent<IInteractable>() != null)
                 {
-                    hit.transform.gameObject.GetComponent < IInteractable>()?.Interact();
+                    hit.transform.gameObject.GetComponent<IInteractable>()?.Interact(gameObject);
                 }
                 else
                 {

@@ -327,7 +327,7 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-  dialogueSpoken: What's in it for me?
+  dialogueSpoken: Where are  all of your workers?
   entry: 0
   exit: 0
 --- !u!114 &-1289489693050325929
@@ -487,8 +487,8 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 1
-  dialogueSpoken: Some money and food. Whatever would go to my workers that ain't
-    here.
+  dialogueSpoken: I have no idea kid, probably trying to use people going missing
+    as an excuse to be lazy. Can't seem to get any good help these days.
   entry: 0
   exit: 0
 --- !u!114 &3417774071677728676
@@ -603,7 +603,7 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-  dialogueSpoken: Sure, what do you need from me?
+  dialogueSpoken: All right, well what do you need from me?
   entry: 0
   exit: 0
 --- !u!114 &8322981419247877509

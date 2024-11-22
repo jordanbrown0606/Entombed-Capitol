@@ -6,7 +6,7 @@ public class LighthouseBarrel : MonoBehaviour, IInteractable
 {
     [SerializeField] private ObjectiveTrigger _objective;
 
-    public void Interact()
+    public void Interact(GameObject interactor)
     {
         _objective.Invoke();
     }

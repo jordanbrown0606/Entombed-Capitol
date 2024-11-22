@@ -22,11 +22,11 @@ MonoBehaviour:
     optional: 0
     visible: 1
     initialStatus: 0
-  - name: Kill the Haggler
-    optional: 1
-    visible: 1
-    initialStatus: 0
   - name: Leave the Village for the Capitol
     optional: 0
+    visible: 1
+    initialStatus: 0
+  - name: Kill the Haggler
+    optional: 1
     visible: 1
     initialStatus: 0

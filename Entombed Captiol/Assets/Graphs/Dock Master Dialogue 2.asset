@@ -102,7 +102,7 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 1
-  dialogueSpoken: Just take it and get lost, kid.
+  dialogueSpoken: I never said I would pay you.  Now, get lost kid.
   entry: 0
   exit: 0
 --- !u!114 &11400000
@@ -170,7 +170,7 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-  dialogueSpoken: That's it? Those boxes were pretty heavy...
+  dialogueSpoken: Really, nothing? Those boxes were pretty heavy.
   entry: 0
   exit: 0
 --- !u!114 &1589476700726317662
@@ -247,7 +247,7 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-  dialogueSpoken: Thanks! I really appreciate the work.
+  dialogueSpoken: You're welcome! I'm always happy to help.
   entry: 0
   exit: 0
 --- !u!114 &6482785894810680545
@@ -316,7 +316,7 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 1
-  dialogueSpoken: Good work, kid. Here's your reward for helping.
+  dialogueSpoken: Good work, kid. I appreciate the help!
   entry: 0
   exit: 0
 --- !u!114 &8857243194681513679

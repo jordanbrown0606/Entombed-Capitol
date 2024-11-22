@@ -8,7 +8,7 @@ public class NoteController : MonoBehaviour, IInteractable
     [SerializeField] private GameObject _note;
     [SerializeField] private ObjectiveTrigger _objective;
 
-    public void Interact()
+    public void Interact(GameObject interactor)
     {
         _note.SetActive(true);
     }
