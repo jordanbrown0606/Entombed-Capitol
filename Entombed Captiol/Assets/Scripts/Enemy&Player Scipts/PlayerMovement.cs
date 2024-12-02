@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Net;
 using UnityEngine;
 
 
@@ -9,7 +8,6 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float _speed;
-    [SerializeField] private float _runSpeed;
     [SerializeField] private float _sensitivity;
     [SerializeField] private float _maxForce;
     [SerializeField] private float _lookRotation;
@@ -29,22 +27,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-        float curSpeed = 0f;
-
-        if(Input.GetKey(KeyCode.LeftShift))
-        {
-            curSpeed = _runSpeed;            
-        }
-        else
-        {
-            curSpeed = _speed;
-        }
-
         _move.x = Input.GetAxis("Horizontal");
         _move.y = Input.GetAxis("Vertical");
 
         Vector3 currentVelocity = _rb.velocity;
-        Vector3 targetVelocity = new Vector3(_move.x, 0, _move.y) * curSpeed;
+        Vector3 targetVelocity = new Vector3(_move.x, 0, _move.y) * _speed;
 
         targetVelocity = transform.TransformDirection(targetVelocity);
 
