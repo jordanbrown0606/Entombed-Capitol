@@ -1892,6 +1892,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: dbd4bc18a3c6e7b468ae2edb7cc58848, type: 3}
   m_PrefabInstance: {fileID: 172679366}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &183571997
 GameObject:
   m_ObjectHideFlags: 0
@@ -2001,6 +2002,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183571997}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+=======
+>>>>>>> parent of 3d5caf9 (Added in more props)
 --- !u!1001 &204805609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2071,6 +2074,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: dbd4bc18a3c6e7b468ae2edb7cc58848, type: 3}
   m_PrefabInstance: {fileID: 204805609}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!43 &206398405
 Mesh:
   m_ObjectHideFlags: 0
@@ -2236,6 +2240,8 @@ Mesh:
     offset: 0
     size: 0
     path: 
+=======
+>>>>>>> parent of 3d5caf9 (Added in more props)
 --- !u!1 &209879735 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1125412742619236, guid: 2220091fa6cc86845938f9f1dae157b1, type: 3}
@@ -12851,6 +12857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 --- !u!1001 &755900721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12924,6 +12931,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79befe30771afe842b9504486853ca3e, type: 3}
+=======
+>>>>>>> parent of 3d5caf9 (Added in more props)
 --- !u!1001 &756508564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15034,6 +15043,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8678710425078007021, guid: 2b6f6030c9b99134882310355f6f87bf, type: 3}
   m_PrefabInstance: {fileID: 1486497753}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &981566241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15107,6 +15117,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9f04c0387c36bf49bfa74ac0e3ae9f6, type: 3}
+=======
+>>>>>>> parent of 3d5caf9 (Added in more props)
 --- !u!1 &999075883 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1025149723992568, guid: ac0b82ef4876a594ba785dd5e0eb94df, type: 3}
@@ -18691,6 +18703,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1235384594}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!43 &1405893056
 Mesh:
   m_ObjectHideFlags: 0
@@ -18856,6 +18869,8 @@ Mesh:
     offset: 0
     size: 0
     path: 
+=======
+>>>>>>> parent of 3d5caf9 (Added in more props)
 --- !u!1001 &1416129124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37194,6 +37209,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f2a61912d14f4c40ab1041682bd23cd, type: 3}
+<<<<<<< HEAD
 --- !u!1 &1672265196
 GameObject:
   m_ObjectHideFlags: 0
@@ -40761,6 +40777,8 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+=======
+>>>>>>> parent of 3d5caf9 (Added in more props)
 --- !u!1 &1672938032 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1025149723992568, guid: ac0b82ef4876a594ba785dd5e0eb94df, type: 3}
@@ -43000,6 +43018,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: a8793ae45efd71545b54e3c7612887bf, type: 3}
+<<<<<<< HEAD
 --- !u!1 &1849613597 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4559232834533764397, guid: 2b6f6030c9b99134882310355f6f87bf, type: 3}
@@ -43027,6 +43046,8 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5076798556035486163, guid: d9707b62d69aa7649b248d8c5eacbb9a, type: 3}
+=======
+>>>>>>> parent of 3d5caf9 (Added in more props)
 --- !u!1001 &1850430816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49671,6 +49692,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1001 &1922533174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49838,6 +49860,8 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+=======
+>>>>>>> parent of 3d5caf9 (Added in more props)
 --- !u!1001 &1977601411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55856,8 +55880,11 @@ SceneRoots:
   - {fileID: 2066605745}
   - {fileID: 2089191155}
   - {fileID: 1915934656}
+<<<<<<< HEAD
   - {fileID: 1717189353}
   - {fileID: 981566241}
   - {fileID: 1922533174}
   - {fileID: 1389471536}
   - {fileID: 755900721}
+=======
+>>>>>>> parent of 3d5caf9 (Added in more props)
