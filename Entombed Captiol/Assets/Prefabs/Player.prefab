@@ -327,6 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
+  _runSpeed: 10
   _sensitivity: 1
   _maxForce: 1
   _lookRotation: 0
